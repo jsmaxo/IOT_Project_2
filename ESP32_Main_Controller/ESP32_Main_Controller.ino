@@ -3,28 +3,6 @@
  * Water Level and Water Quality Monitoring System - Project Part 2
  *
  * ESP32 #1 - MAIN CONTROLLER
- *
- * Mandatory:
- * A1 - FreeRTOS multitasking
- * A2 - WebSocket configuration portal + SoftAP
- * A3 - Interrupt-based event handling
- * A4 - Distributed ESP32 system using UART
- *
- * Optional:
- * B1 - NVS configuration storage
- * B2 - Watchdog timer
- * B4 - FreeRTOS Queue + Mutex + Task Notification
- * B6 - On-device real-time WebSocket dashboard
- *
- * Hardware:
- * HC-SR04, YF-S201 flow sensor, relay/pump, buzzer,
- * red/blue LEDs, 16x2 I2C LCD, configuration push button.
- *
- * IMPORTANT:
- * 1. HC-SR04 ECHO must be level-shifted/divided to <= 3.3 V.
- * 2. GPIO34 has no internal pull-up. Use an external ~10 kOhm
- *    pull-up to 3.3 V for the YF-S201 pulse output if required.
- * 3. Do not power the pump from an ESP32 GPIO.
  */
 
 #define BLYNK_PRINT Serial
