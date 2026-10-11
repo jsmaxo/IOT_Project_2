@@ -3,25 +3,6 @@
  * Water Level and Water Quality Monitoring System - Project Part 2
  *
  * ESP32 #2 - DISTRIBUTED WATER QUALITY NODE
- *
- * Sensors:
- *   - Existing TDS sensor
- *   - Existing EC calculation
- *   - DS18B20 waterproof temperature sensor
- *
- * Display:
- *   - 16x2 I2C LCD
- *
- * Mandatory:
- *   A1 - FreeRTOS multitasking
- *   A4 - Distributed ESP32 system using UART
- *
- * Optional:
- *   B2 - Watchdog
- *   B4 - Mutex / task-based architecture
- *
- * UART frame sent to ESP32 #1:
- *   Q,sequence,tds,ec,temperature
  */
 
 #include <Arduino.h>
